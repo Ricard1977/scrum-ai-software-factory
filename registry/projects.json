@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-28",
+  "projects": [
+    {
+      "project_id": "FACTORY-DEMO-A",
+      "project_name": "Factory Demo Alpha",
+      "repository": "Ricard1977/scrum-ai-software-factory",
+      "product_owner": "Ricard",
+      "status": "ACTIVE",
+      "tech_stack": ["Static fixture"],
+      "environments": ["Test"],
+      "main_branch": "main",
+      "documentation_location": "fixtures/FACTORY-DEMO-A",
+      "backlog_location": "fixtures/FACTORY-DEMO-A/backlog.json",
+      "architecture_location": "fixtures/FACTORY-DEMO-A/ARCHITECTURE.md",
+      "last_release": null,
+      "active_sprint": "Sprint 01",
+      "created_at": "2026-09-28",
+      "last_activity": "2026-09-28",
+      "health_status": "HEALTHY",
+      "fictitious": true
+    }
+  ]
+}
