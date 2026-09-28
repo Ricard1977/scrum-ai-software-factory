@@ -1,0 +1,6 @@
+[
+  {"timestamp":"2026-09-28T19:15:00+02:00","project_id":"FACTORY-DEMO-A","type":"BLOCKER","message":"Synthetic upstream provider returned HTTP 503; fallback investigation blocked."},
+  {"timestamp":"2026-09-28T19:18:00+02:00","project_id":"FACTORY-DEMO-A","type":"NEEDS_PRODUCT_OWNER","message":"Destructive demo reset behaviour requires Product Owner choice."},
+  {"timestamp":"2026-09-28T19:25:00+02:00","project_id":"FACTORY-DEMO-B","type":"QA","message":"Cross-project aggregation isolation test entered QA."},
+  {"timestamp":"2026-09-28T19:30:00+02:00","project_id":"FACTORY-DEMO-B","type":"DEPLOYMENT","message":"Synthetic staging release demo-b-v0.1.0 ready for acceptance."}
+]
