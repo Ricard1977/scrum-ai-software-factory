@@ -1,0 +1,15 @@
+{
+  "project_id": "FACTORY-DEMO-B",
+  "sprint": {
+    "name": "Sprint 03",
+    "goal": "Prove concurrent multi-project delivery without context leakage.",
+    "start_date": "2026-09-28",
+    "end_date": "2026-10-05"
+  },
+  "items": [
+    {"id":"FDB-001","title":"Create isolated Beta project summary","type":"FEATURE","priority":"HIGH","owner_role":"Frontend / UX Engineer","status":"DONE","sprint":"Sprint 03","progress":100,"test_status":"PASSED"},
+    {"id":"FDB-002","title":"Verify cross-project aggregation preserves PROJECT_ID","type":"TASK","priority":"CRITICAL","owner_role":"QA / Test Engineer","status":"QA","sprint":"Sprint 03","progress":85,"test_status":"RUNNING"},
+    {"id":"FDB-003","title":"Prepare synthetic staging deployment","type":"TASK","priority":"MEDIUM","owner_role":"DevOps / Release Engineer","status":"READY_FOR_ACCEPTANCE","sprint":"Sprint 03","progress":100,"test_status":"PASSED"},
+    {"id":"FDB-004","title":"Refine project onboarding metadata","type":"IMPROVEMENT","priority":"LOW","owner_role":"Delivery Orchestrator / Scrum Master","status":"BACKLOG","sprint":null,"progress":0,"test_status":"NOT_RUN"}
+  ]
+}
