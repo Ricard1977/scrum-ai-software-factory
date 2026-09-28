@@ -1,0 +1,40 @@
+name: User Story
+description: Product-facing work item
+title: "[STORY] "
+body:
+  - type: input
+    id: project
+    attributes:
+      label: PROJECT_ID
+    validations:
+      required: true
+  - type: textarea
+    id: story
+    attributes:
+      label: User Story
+      description: "Como [usuario], quiero [capacidad], para [beneficio]."
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Business Value
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope / Out of Scope
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and Risks
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Prefer GIVEN / WHEN / THEN and make every criterion verifiable.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Test Evidence Required
