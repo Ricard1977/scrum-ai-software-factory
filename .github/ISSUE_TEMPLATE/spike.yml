@@ -1,0 +1,32 @@
+name: Spike
+description: Time-boxed investigation for material uncertainty
+title: "[SPIKE] "
+body:
+  - type: input
+    id: project
+    attributes:
+      label: PROJECT_ID
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+  - type: textarea
+    id: method
+    attributes:
+      label: Test Method
+  - type: textarea
+    id: results
+    attributes:
+      label: Results / Evidence
+  - type: textarea
+    id: conclusion
+    attributes:
+      label: Conclusion / Recommendation
