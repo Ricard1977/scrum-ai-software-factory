@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Scrum Control Center</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><div><p class="eyebrow">SCRUM AI SOFTWARE FACTORY</p><h1>Scrum Control Center</h1></div><span id="clock"></span></header>
+  <nav id="project-tabs"><button class="active" data-view="global">GLOBAL</button></nav>
+  <main>
+    <section id="global-view">
+      <div class="metrics" id="global-metrics"></div>
+      <h2>Projects</h2><div id="projects" class="project-grid"></div>
+      <div class="two-col"><section><h2>Needs Ricard</h2><div id="needs"></div></section><section><h2>Blockers</h2><div id="blockers"></div></section></div>
+    </section>
+    <section id="project-view" hidden><button id="back">← Global</button><div id="project-detail"></div></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
