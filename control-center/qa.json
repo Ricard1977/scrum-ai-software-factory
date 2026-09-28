@@ -1,0 +1,4 @@
+{
+  "FACTORY-DEMO-A": {"passed":1,"failed":0,"pending":4,"regressions":0,"last_execution":"2026-09-28T19:26:00+02:00"},
+  "FACTORY-DEMO-B": {"passed":2,"failed":0,"pending":2,"regressions":0,"last_execution":"2026-09-28T19:31:00+02:00"}
+}
