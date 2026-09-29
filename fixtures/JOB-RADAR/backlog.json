@@ -1,0 +1,88 @@
+{
+  "project_id": "JOB-RADAR",
+  "sprint": {
+    "name": "Sprint 01",
+    "goal": "Estabilizar el procesamiento automático de evaluación IA de Job Radar y demostrar recuperación y persistencia fiable sin pérdida de decisiones ni datos.",
+    "start_date": "2026-09-29",
+    "end_date": "2026-10-06"
+  },
+  "items": [
+    {
+      "id": "JR-001",
+      "title": "Auditar el estado real de Work Orders, scheduler y persistencia",
+      "type": "SPIKE",
+      "priority": "CRITICAL",
+      "owner_role": "Tech Lead / Software Architect",
+      "status": "DONE",
+      "sprint": "Sprint 01",
+      "progress": 100,
+      "test_status": "PASSED"
+    },
+    {
+      "id": "JR-002",
+      "title": "Validar recuperación automática de items RETRY_WAIT",
+      "type": "USER_STORY",
+      "priority": "CRITICAL",
+      "owner_role": "QA / Test Engineer",
+      "status": "READY",
+      "sprint": "Sprint 01",
+      "progress": 0,
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "JR-003",
+      "title": "Demostrar persistencia durable por item ante interrupción del runner",
+      "type": "USER_STORY",
+      "priority": "CRITICAL",
+      "owner_role": "Backend / Data Engineer",
+      "status": "READY",
+      "sprint": "Sprint 01",
+      "progress": 0,
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "JR-004",
+      "title": "Validar idempotencia extremo a extremo de la evaluación IA",
+      "type": "USER_STORY",
+      "priority": "HIGH",
+      "owner_role": "QA / Test Engineer",
+      "status": "READY",
+      "sprint": "Sprint 01",
+      "progress": 0,
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "JR-005",
+      "title": "Drenar de forma controlada las ofertas pendientes de evaluación IA",
+      "type": "TASK",
+      "priority": "HIGH",
+      "owner_role": "AI / Automation Engineer",
+      "status": "BACKLOG",
+      "sprint": "Sprint 01",
+      "progress": 0,
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "JR-006",
+      "title": "Exponer progreso real de Work Orders en el frontend de Job Radar",
+      "type": "FEATURE",
+      "priority": "MEDIUM",
+      "owner_role": "Frontend / UX Engineer",
+      "status": "BACKLOG",
+      "sprint": "Sprint 01",
+      "progress": 0,
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "JR-007",
+      "title": "Definir siguiente incremento de Learning aplicado al prefiltrado",
+      "type": "SPIKE",
+      "priority": "HIGH",
+      "owner_role": "Delivery Orchestrator / Scrum Master",
+      "status": "BACKLOG",
+      "sprint": "Sprint 01",
+      "progress": 0,
+      "test_status": "NOT_RUN"
+    }
+  ]
+}
