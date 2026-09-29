@@ -25,11 +25,22 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Build Pages artifact
         run: |
-          mkdir -p _site/control-center _site/registry _site/fixtures/FACTORY-DEMO-A _site/fixtures/FACTORY-DEMO-B
+          mkdir -p _site/control-center _site/registry _site/fixtures
           cp control-center/* _site/control-center/
           cp registry/projects.json _site/registry/
-          cp fixtures/FACTORY-DEMO-A/backlog.json _site/fixtures/FACTORY-DEMO-A/
-          cp fixtures/FACTORY-DEMO-B/backlog.json _site/fixtures/FACTORY-DEMO-B/
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const registry = JSON.parse(fs.readFileSync('registry/projects.json','utf8'));
+          for (const project of registry.projects) {
+            const source = project.backlog_location;
+            if (!source || !fs.existsSync(source)) throw new Error('Missing registered backlog: ' + source);
+            const target = path.join('_site', source);
+            fs.mkdirSync(path.dirname(target), {recursive:true});
+            fs.copyFileSync(source, target);
+            console.log('Published backlog:', project.project_id, source);
+          }
+          NODE
           cat > _site/index.html <<'EOF'
           <!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=control-center/"><title>Scrum Control Center</title><a href="control-center/">Open Scrum Control Center</a>
           EOF
