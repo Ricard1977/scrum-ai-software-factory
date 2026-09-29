@@ -12,8 +12,11 @@
         "Production"
       ],
       "backlog_location": "fixtures/JOB-RADAR/backlog.json",
-      "current_sprint": "Sprint 01",
-      "product_owner": "Ricard"
+      "product_owner": "Ricard",
+      "main_branch": "main",
+      "documentation_location": "Ricard1977/job-radar-platform/README.md",
+      "architecture_location": "Ricard1977/job-radar-platform/README.md + repository implementation",
+      "active_sprint": "Sprint 01"
     }
   ]
 }
