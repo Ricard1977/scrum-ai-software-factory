@@ -1,0 +1,14 @@
+{
+  "project_id": "FACTORY-DEMO-B",
+  "issue_number": 1,
+  "trace_type": "END_TO_END_DELIVERY_VALIDATION",
+  "acceptance_criteria": [
+    "AC1",
+    "AC2",
+    "AC3",
+    "AC4"
+  ],
+  "implementation_state": "IMPLEMENTED",
+  "qa_state": "PENDING_CI",
+  "evidence_scope": "fictitious-phase-1-only"
+}
