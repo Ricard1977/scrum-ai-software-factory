@@ -1,16 +1,11 @@
 {
-  "project_id": "FACTORY-DEMO-A",
-  "sprint": {
-    "name": "Sprint 01",
-    "goal": "Validate project isolation, workflow visibility, blockers and Product Owner escalation.",
-    "start_date": "2026-09-28",
-    "end_date": "2026-10-05"
-  },
-  "items": [
-    {"id":"FDA-001","title":"Render dynamic project navigation","type":"FEATURE","priority":"HIGH","owner_role":"Frontend / UX Engineer","status":"DONE","sprint":"Sprint 01","progress":100,"test_status":"PASSED"},
-    {"id":"FDA-002","title":"Expose registry-backed project summary","type":"TASK","priority":"HIGH","owner_role":"Backend / Data Engineer","status":"IN_PROGRESS","sprint":"Sprint 01","progress":55,"test_status":"PENDING"},
-    {"id":"FDA-003","title":"Validate health calculation rules","type":"TASK","priority":"MEDIUM","owner_role":"QA / Test Engineer","status":"READY","sprint":"Sprint 01","progress":0,"test_status":"NOT_RUN"},
-    {"id":"FDA-004","title":"Simulate provider outage and fallback","type":"SPIKE","priority":"HIGH","owner_role":"AI / Automation Engineer","status":"BLOCKED","sprint":"Sprint 01","progress":40,"blocked_by":"Synthetic upstream HTTP 503","test_status":"PARTIAL"},
-    {"id":"FDA-005","title":"Choose destructive demo reset behaviour","type":"USER_STORY","priority":"MEDIUM","owner_role":"Product Owner","status":"NEEDS_PRODUCT_OWNER","sprint":"Sprint 01","progress":0,"test_status":"NOT_RUN"}
+  "project_id":"FACTORY-DEMO-A",
+  "sprint":{"name":"Sprint 01","goal":"Validar el aislamiento entre proyectos, la visibilidad del flujo, los bloqueos y la escalada al Product Owner.","start_date":"2026-09-28","end_date":"2026-10-05"},
+  "items":[
+    {"id":"FDA-001","title":"Mostrar navegación dinámica entre proyectos","type":"FEATURE","priority":"HIGH","owner_role":"Frontend / UX Engineer","status":"DONE","sprint":"Sprint 01","progress":100,"test_status":"PASSED"},
+    {"id":"FDA-002","title":"Mostrar el resumen de proyectos desde el registro","type":"TASK","priority":"HIGH","owner_role":"Backend / Data Engineer","status":"IN_PROGRESS","sprint":"Sprint 01","progress":55,"test_status":"PENDING"},
+    {"id":"FDA-003","title":"Validar las reglas de cálculo del estado del proyecto","type":"TASK","priority":"MEDIUM","owner_role":"QA / Test Engineer","status":"READY","sprint":"Sprint 01","progress":0,"test_status":"NOT_RUN"},
+    {"id":"FDA-004","title":"Simular una caída del proveedor y el mecanismo de respaldo","type":"SPIKE","priority":"HIGH","owner_role":"AI / Automation Engineer","status":"BLOCKED","sprint":"Sprint 01","progress":40,"blocked_by":"DEMO: error HTTP 503 simulado del proveedor externo","test_status":"PARTIAL"},
+    {"id":"FDA-005","title":"DEMO: validar que una operación destructiva requiere autorización del Product Owner","type":"USER_STORY","priority":"MEDIUM","owner_role":"Product Owner","status":"NEEDS_PRODUCT_OWNER","sprint":"Sprint 01","progress":0,"test_status":"NOT_RUN"}
   ]
 }
