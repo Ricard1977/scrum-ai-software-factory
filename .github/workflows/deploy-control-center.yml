@@ -1,0 +1,41 @@
+name: Deploy Scrum Control Center
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Build Pages artifact
+        run: |
+          mkdir -p _site/control-center _site/registry _site/fixtures/FACTORY-DEMO-A _site/fixtures/FACTORY-DEMO-B
+          cp control-center/* _site/control-center/
+          cp registry/projects.json _site/registry/
+          cp fixtures/FACTORY-DEMO-A/backlog.json _site/fixtures/FACTORY-DEMO-A/
+          cp fixtures/FACTORY-DEMO-B/backlog.json _site/fixtures/FACTORY-DEMO-B/
+          cat > _site/index.html <<'EOF'
+          <!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=control-center/"><title>Scrum Control Center</title><a href="control-center/">Open Scrum Control Center</a>
+          EOF
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
