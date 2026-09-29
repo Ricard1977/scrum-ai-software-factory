@@ -1,5 +1,22 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-09-29",
-  "projects": []
+  "projects": [
+    {
+      "project_id": "JOB-RADAR",
+      "project_name": "Job Radar",
+      "repository": "Ricard1977/job-radar-platform",
+      "status": "ACTIVE",
+      "health_status": "ATTENTION",
+      "environment": [
+        "Production"
+      ],
+      "backlog_location": "fixtures/JOB-RADAR/backlog.json",
+      "product_owner": "Ricard",
+      "main_branch": "main",
+      "documentation_location": "Ricard1977/job-radar-platform/README.md",
+      "architecture_location": "Ricard1977/job-radar-platform/README.md + repository implementation",
+      "active_sprint": "Sprint 01"
+    }
+  ]
 }

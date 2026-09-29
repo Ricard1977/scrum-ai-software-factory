@@ -1,14 +1,61 @@
 {
   "incidents": [],
-  "deployments": [],
-  "sprint_metrics": {},
+  "deployments": [
+    {
+      "project_id": "JOB-RADAR",
+      "environment": "Production",
+      "release": "V1 operativa",
+      "status": "VALIDATED",
+      "rollback": "AVAILABLE"
+    }
+  ],
+  "sprint_metrics": {
+    "JOB-RADAR": {
+      "committed": 7,
+      "completed": 1,
+      "velocity": 1,
+      "previous_velocity": [],
+      "burndown": [
+        7,
+        6
+      ]
+    }
+  },
   "roles": [
-    {"role":"Delivery Orchestrator / Scrum Master","status":"AVAILABLE","workload":0},
-    {"role":"Tech Lead / Software Architect","status":"AVAILABLE","workload":0},
-    {"role":"Backend / Data Engineer","status":"AVAILABLE","workload":0},
-    {"role":"Frontend / UX Engineer","status":"AVAILABLE","workload":0},
-    {"role":"AI / Automation Engineer","status":"AVAILABLE","workload":0},
-    {"role":"QA / Test Engineer","status":"AVAILABLE","workload":0},
-    {"role":"DevOps / Release Engineer","status":"AVAILABLE","workload":0}
+    {
+      "role": "Delivery Orchestrator / Scrum Master",
+      "status": "WORKING",
+      "workload": 1
+    },
+    {
+      "role": "Tech Lead / Software Architect",
+      "status": "AVAILABLE",
+      "workload": 0
+    },
+    {
+      "role": "Backend / Data Engineer",
+      "status": "AVAILABLE",
+      "workload": 1
+    },
+    {
+      "role": "Frontend / UX Engineer",
+      "status": "AVAILABLE",
+      "workload": 1
+    },
+    {
+      "role": "AI / Automation Engineer",
+      "status": "AVAILABLE",
+      "workload": 1
+    },
+    {
+      "role": "QA / Test Engineer",
+      "status": "AVAILABLE",
+      "workload": 2
+    },
+    {
+      "role": "DevOps / Release Engineer",
+      "status": "AVAILABLE",
+      "workload": 0
+    }
   ]
 }
