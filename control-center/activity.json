@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "project_id": "JOB-RADAR",
+    "type": "ONBOARDING",
+    "message": "Proyecto real incorporado a la Scrum AI Software Factory tras autorización del Product Owner.",
+    "timestamp": "2026-09-29"
+  },
+  {
+    "project_id": "JOB-RADAR",
+    "type": "DISCOVERY",
+    "message": "Auditoría inicial confirma scheduler automático de evaluación activo y ejecuciones recientes satisfactorias.",
+    "timestamp": "2026-09-29"
+  }
+]
