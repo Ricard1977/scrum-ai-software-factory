@@ -1,0 +1,7 @@
+{
+  "project_id": "FACTORY-DEMO-B",
+  "issue_number": 3,
+  "trace_type": "CONTROLLED_FAILURE_RECOVERY",
+  "test_state": "INTENTIONALLY_INVALID",
+  "evidence_scope": "fictitious-phase-1-only"
+}
