@@ -1,0 +1,7 @@
+{
+  "project_id": "FACTORY-DEMO-A",
+  "issue_number": 3,
+  "trace_type": "CONTROLLED_FAILURE_RECOVERY",
+  "test_state": "CORRECTED_AFTER_DETECTED_FAILURE",
+  "evidence_scope": "fictitious-phase-1-only"
+}

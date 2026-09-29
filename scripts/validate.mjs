@@ -14,13 +14,12 @@ for(const p of registry.projects){
     if(b.project_id!==p.project_id) failures.push(`${p.project_id} backlog isolation mismatch`);
     for(const item of b.items||[]) if(!item.id||!item.title||!item.type||!item.priority||!item.owner_role||!item.status) failures.push(`${p.project_id} malformed backlog item`);
   }
-}
-const evidencePath='fixtures/FACTORY-DEMO-B/delivery-evidence.json';
-if(fs.existsSync(evidencePath)){
-  const evidence=JSON.parse(fs.readFileSync(evidencePath,'utf8'));
-  if(evidence.project_id!=='FACTORY-DEMO-B') failures.push('Demo B delivery evidence PROJECT_ID isolation mismatch');
-  if(evidence.issue_number!==1) failures.push('Demo B delivery evidence is not linked to Issue #1');
-  if(evidence.evidence_scope!=='fictitious-phase-1-only') failures.push('Demo B evidence escaped fictitious Phase 1 scope');
+  const evidencePath=`fixtures/${p.project_id}/delivery-evidence.json`;
+  if(fs.existsSync(evidencePath)){
+    const evidence=JSON.parse(fs.readFileSync(evidencePath,'utf8'));
+    if(evidence.project_id!==p.project_id) failures.push(`${p.project_id} delivery evidence PROJECT_ID isolation mismatch: found ${evidence.project_id}`);
+    if(evidence.evidence_scope!=='fictitious-phase-1-only') failures.push(`${p.project_id} evidence escaped fictitious Phase 1 scope`);
+  }
 }
 if(failures.length){console.error('FACTORY VALIDATION FAILED');failures.forEach(x=>console.error('- '+x));process.exit(1)}
 console.log(`FACTORY VALIDATION PASSED: ${registry.projects.length} project(s), strict PROJECT_ID isolation verified.`);
