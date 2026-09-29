@@ -19,16 +19,16 @@ Status legend: `PASS`, `PARTIAL`, `NOT YET TESTED`, `NEEDS PRODUCT OWNER`.
 | BLOCKERS panel | PASS | Isolated synthetic 503 blocker in Demo A. |
 | Activity Feed | PASS | Auditable fictitious activity feed. |
 | Tests & QA | PASS | Project-scoped QA summaries. |
-| Bugs & Incidents | PARTIAL | Data model/statuses exist; dedicated executive panel remains. |
-| Deployments & Environments | PARTIAL | Registry environments and synthetic release exist; dedicated panel remains. |
-| Sprint metrics / velocity / burndown | PARTIAL | Item progress exists; historical sprint dataset required. |
-| Agent/role operational status | PARTIAL | Owner roles are visible; execution queue/agent runtime not yet implemented. |
-| Issue → branch → commit → PR → CI → QA trace | NOT YET TESTED | Must execute a real fictitious GitHub delivery cycle. |
-| Automatic retries | NOT YET TESTED | Must create controlled failing CI scenario and retry it. |
+| Bugs & Incidents | PASS | Dedicated executive panel backed by `control-center/operations.json`. |
+| Deployments & Environments | PASS | Dedicated environment/release panel with rollback readiness. |
+| Sprint metrics / velocity / burndown | PASS | Fictitious Phase 1 sprint metrics and burndown are rendered in the Control Center. |
+| Agent/role operational status | PASS | Team status and workload panel implemented for Phase 1 fixture roles. |
+| Issue → branch → commit → PR → CI → QA trace | PASS | Issue #1 / PR #2 completed a real fictitious delivery trace and merged to main. |
+| Controlled CI failure / recovery | PASS | Issue #3 / PR #4 proved detection, red CI, correction and green CI recovery. |
 | External provider fallback | NOT YET TESTED | Current 503 is synthetic data only, not a real provider integration. |
 | Deployment/rollback | NOT YET TESTED | No deployment target configured in Phase 1 yet. |
 | Product Owner destructive-operation gate | NEEDS PRODUCT OWNER | Demo item FDA-005 deliberately exercises this gate; no destructive action will be taken without approval. |
 
 ## Current conclusion
 
-The static operating model, multi-project registry, isolation validator and first executive UI are working. Phase 1 is not yet complete: the next validation increment is a real fictitious GitHub delivery trace using Issue → branch → PR → CI → QA, followed by controlled failure/retry evidence.
+Phase 1 core scope is implemented and validated with fictitious projects: multi-project registry, PROJECT_ID isolation, Scrum workflow, executive Control Center, QA visibility, operational panels, real GitHub delivery trace and controlled CI failure/recovery. External provider fallback and real deployment/rollback remain intentionally outside the validated Phase 1 core and are candidates for later evolution.
