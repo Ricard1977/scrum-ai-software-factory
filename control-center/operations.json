@@ -1,0 +1,114 @@
+{
+  "incidents": [
+    {
+      "project_id": "FACTORY-DEMO-A",
+      "id": "INC-001",
+      "severity": "HIGH",
+      "status": "BLOCKED",
+      "title": "Synthetic upstream provider HTTP 503",
+      "owner_role": "AI / Automation Engineer"
+    },
+    {
+      "project_id": "FACTORY-DEMO-B",
+      "id": "INC-002",
+      "severity": "LOW",
+      "status": "RESOLVED",
+      "title": "Controlled PROJECT_ID validation failure",
+      "owner_role": "QA / Test Engineer"
+    }
+  ],
+  "deployments": [
+    {
+      "project_id": "FACTORY-DEMO-A",
+      "environment": "Test",
+      "release": "demo-a-validation",
+      "status": "VALIDATED",
+      "rollback": "NOT_REQUIRED"
+    },
+    {
+      "project_id": "FACTORY-DEMO-B",
+      "environment": "Test",
+      "release": "demo-b-v0.1.0",
+      "status": "VALIDATED",
+      "rollback": "AVAILABLE"
+    },
+    {
+      "project_id": "FACTORY-DEMO-B",
+      "environment": "Staging",
+      "release": "demo-b-v0.1.0",
+      "status": "READY_FOR_ACCEPTANCE",
+      "rollback": "AVAILABLE"
+    }
+  ],
+  "sprint_metrics": {
+    "FACTORY-DEMO-A": {
+      "committed": 5,
+      "completed": 1,
+      "velocity": 1,
+      "previous_velocity": [
+        2,
+        3
+      ],
+      "burndown": [
+        5,
+        5,
+        4,
+        4,
+        4
+      ]
+    },
+    "FACTORY-DEMO-B": {
+      "committed": 3,
+      "completed": 1,
+      "velocity": 1,
+      "previous_velocity": [
+        1,
+        2
+      ],
+      "burndown": [
+        3,
+        3,
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  "roles": [
+    {
+      "role": "Delivery Orchestrator / Scrum Master",
+      "status": "AVAILABLE",
+      "workload": 1
+    },
+    {
+      "role": "Tech Lead / Software Architect",
+      "status": "AVAILABLE",
+      "workload": 0
+    },
+    {
+      "role": "Backend / Data Engineer",
+      "status": "WORKING",
+      "workload": 1
+    },
+    {
+      "role": "Frontend / UX Engineer",
+      "status": "AVAILABLE",
+      "workload": 0
+    },
+    {
+      "role": "AI / Automation Engineer",
+      "status": "BLOCKED",
+      "workload": 1
+    },
+    {
+      "role": "QA / Test Engineer",
+      "status": "WORKING",
+      "workload": 2
+    },
+    {
+      "role": "DevOps / Release Engineer",
+      "status": "WAITING_ACCEPTANCE",
+      "workload": 1
+    }
+  ]
+}
