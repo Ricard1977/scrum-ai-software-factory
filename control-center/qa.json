@@ -1,1 +1,9 @@
-{}
+{
+  "JOB-RADAR": {
+    "passed": 1,
+    "failed": 0,
+    "pending": 3,
+    "regressions": 0,
+    "last_execution": "Auditoría inicial · 2026-09-29"
+  }
+}
